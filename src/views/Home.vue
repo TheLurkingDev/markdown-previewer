@@ -1,7 +1,6 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="home">    
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam, voluptatibus quisquam. Dolor nostrum minus dolorum optio veritatis? Possimus debitis repellat cupiditate officia necessitatibus incidunt sapiente recusandae consectetur earum, eligendi provident?</p>
   </div>
 </template>
 
