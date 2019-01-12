@@ -7,7 +7,7 @@
         </v-layout>
         <v-layout row>
             <v-flex>
-                <div class="editor-textarea">{{ markdown }}</div>
+                <div v-markdown class="editor-textarea">{{ markdown }}</div>
             </v-flex>
         </v-layout>
     </v-container>
