@@ -17,7 +17,7 @@
 export default {
     data() {
         return {
-            markdown: ''
+            markdown: '# Testing this'
         }
     }
 }
@@ -25,7 +25,8 @@ export default {
 
 <style scoped>
     .editor-textarea {
-        width: 100%;                      
+        width: 100%;
+        height: 300px;                      
         padding: 30px;
     }
 </style>
