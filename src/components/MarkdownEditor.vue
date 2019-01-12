@@ -1,8 +1,8 @@
 <template>
-    <div>
-        <v-textarea v-model="markdown" solo no-resize px-4 height="300" counter></v-textarea>
+    <v-container>
+        <v-textarea v-model="markdown" box placeholder="Enter markdown" no-resize height="350" counter></v-textarea>
         <vue-markdown-it :source="markdown" id="some-id" breaks="true" class="my-markdown-class"/>
-    </div>    
+    </v-container>    
 </template>
 
 <script>
