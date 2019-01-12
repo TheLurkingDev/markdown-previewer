@@ -7,7 +7,7 @@
         </v-layout>
         <v-layout row>
             <v-flex>
-                <div v-markdown class="editor-textarea">{{ markdown }}</div>
+                <div :key="markdown" v-markdown class="editor-textarea">{{ markdown }}</div>
             </v-flex>
         </v-layout>
     </v-container>
@@ -17,7 +17,7 @@
 export default {
     data() {
         return {
-            markdown: '# Testing this'
+            markdown: ''
         }
     }
 }
