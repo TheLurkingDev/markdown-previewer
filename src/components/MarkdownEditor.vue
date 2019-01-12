@@ -1,20 +1,18 @@
 <template>
-    <v-container align-center>
-        <v-layout row>
-            <v-flex mx-4>
-                <v-textarea v-model="markdown" solo no-resize px-4 height="300" counter></v-textarea>
-            </v-flex>            
-        </v-layout>
-        <v-layout row>
-            <v-flex>
-                <div :key="markdown" v-markdown class="editor-textarea">{{ markdown }}</div>
-            </v-flex>
-        </v-layout>
-    </v-container>
+    <div>
+        <v-textarea v-model="markdown" solo no-resize px-4 height="300" counter></v-textarea>
+        <vue-markdown-it :source="markdown" id="some-id" breaks="true" class="my-markdown-class"/>
+    </div>    
 </template>
 
 <script>
+import VueMarkdownIt from 'vue-markdown-it';
+
 export default {
+    name: 'MarkdownEditor',
+    components: {
+        VueMarkdownIt
+    },
     data() {
         return {
             markdown: ''
@@ -24,9 +22,5 @@ export default {
 </script>
 
 <style scoped>
-    .editor-textarea {
-        width: 100%;
-        height: 300px;                      
-        padding: 30px;
-    }
+    @import "~highlight.js/styles/default.css";
 </style>
