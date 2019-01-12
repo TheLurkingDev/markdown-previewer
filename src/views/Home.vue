@@ -1,17 +1,17 @@
 <template>
   <div class="home">    
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam, voluptatibus quisquam. Dolor nostrum minus dolorum optio veritatis? Possimus debitis repellat cupiditate officia necessitatibus incidunt sapiente recusandae consectetur earum, eligendi provident?</p>
+    <markdown-editor />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-
+import MarkdownEditor from '../components/MarkdownEditor';
 
 export default {
   name: 'home',
   components: {
-    
+    MarkdownEditor
   }
 }
 </script>
